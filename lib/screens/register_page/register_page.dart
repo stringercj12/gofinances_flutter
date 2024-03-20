@@ -43,7 +43,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 hintText: 'Nome',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(6),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: AppColors.shape,
                   ),
                 ),

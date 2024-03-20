@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gofinances/core/app_color.dart';
 import 'package:gofinances/shared/app_images.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,7 +20,7 @@ class _WelcomePageState extends State<WelcomePage> {
           children: [
             Container(
               alignment: Alignment.center,
-              color: Color(0xff5636D3),
+              color: const Color(0xff5636D3),
               child: Column(
                 children: [
                   Image.asset(
@@ -79,7 +80,7 @@ class _WelcomePageState extends State<WelcomePage> {
             Align(
               alignment: Alignment.bottomCenter,
               child: Container(
-                color: Color(0xffFF872C),
+                color: AppColors.orange,
                 height: 245,
                 width: double.infinity,
                 child: Column(
@@ -97,11 +98,12 @@ class _WelcomePageState extends State<WelcomePage> {
                         child: Row(
                           children: [
                             Image.asset(AppImages.google),
-                            Expanded(
-                                child: Text(
-                              'Entrar com google',
-                              textAlign: TextAlign.center,
-                            ))
+                            const Expanded(
+                              child: Text(
+                                'Entrar com google',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
                           ],
                         ),
                       ),

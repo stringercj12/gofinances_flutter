@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gofinances/screens/home_page/home_page.dart';
-import 'package:gofinances/core/app_color.dart';
 
 void main() {
   runApp(const MyApp());

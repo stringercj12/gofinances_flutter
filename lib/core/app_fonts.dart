@@ -28,6 +28,11 @@ class AppFonts {
     fontWeight: FontWeight.w400,
     color: AppColors.title,
   );
+  static final textCardMoney = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    color: AppColors.green,
+  );
   static final text = GoogleFonts.poppins(
     fontSize: 12,
     fontWeight: FontWeight.w400,
