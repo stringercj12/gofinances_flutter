@@ -47,53 +47,49 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      height: 150,
       width: 300,
-      height: 100,
-      child: Card(
-        elevation: 2,
-        child: Container(
-          decoration: BoxDecoration(
-            color: AppColors.green,
-            borderRadius: BorderRadius.circular(5),
-            boxShadow: [
-              BoxShadow(
-                blurRadius: 1.0,
-                color: background,
-                spreadRadius: 1.0,
-                offset: const Offset(0, 1),
-              ),
-            ],
+      decoration: BoxDecoration(
+        color: background,
+        borderRadius: BorderRadius.circular(5),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 1.0,
+            color: background,
+            spreadRadius: 1.0,
+            offset: const Offset(0, 1),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(24),
-            child: Column(
+        ],
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      title,
-                      style: AppFonts.titleCard.merge(
-                        TextStyle(color: colorTitle),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 40,
-                      width: 40,
-                      child: Icon(
-                        icon,
-                        color: colorIcon,
-                        size: 40,
-                      ),
-                    ),
-                  ],
+                Text(
+                  title,
+                  style: AppFonts.titleCard.merge(
+                    TextStyle(color: colorTitle),
+                  ),
                 ),
-                const SizedBox(
-                  height: 34,
+                SizedBox(
+                  height: 20,
+                  width: 20,
+                  child: Icon(
+                    icon,
+                    color: colorIcon,
+                    size: 20,
+                  ),
                 ),
+              ],
+            ),
+            Column(
+              children: [
                 Text(
                   money,
                   style: AppFonts.textMoney.merge(
@@ -108,7 +104,7 @@ class CardWidget extends StatelessWidget {
                 ),
               ],
             ),
-          ),
+          ],
         ),
       ),
     );

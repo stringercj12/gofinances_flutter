@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gofinances/screens/home_page/home_page.dart';
+import 'package:gofinances/screens/login_page/login_page.dart';
+import 'package:gofinances/screens/register_page/register_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const RegisterPage(),
     );
   }
 }

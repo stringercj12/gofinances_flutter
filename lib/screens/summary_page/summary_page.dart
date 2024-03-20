@@ -17,7 +17,7 @@ class _SummaryPageState extends State<SummaryPage> {
         preferredSize: const Size.fromHeight(152),
         child: Container(
           height: 114,
-          color: AppColors.blue,
+          color: AppColors.purple,
           child: Center(
             child: ListTile(
               title: Center(
